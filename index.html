@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cybersecurity Challenge Game</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+  <h1 id="title">Cybersecurity Challenge Game</h1>
+  <div class="selectors">
+    <label for="cipherSelect">Choose Cipher:</label>
+    <select id="cipherSelect">
+      <option value="caesar">Caesar Cipher</option>
+      <option value="base64">Base64</option>
+      <option value="playfair">Playfair Cipher</option>
+      <option value="hill">Hill Cipher</option>
+      <option value="vernam">Vernam Cipher</option>
+      <option value="vigenere">Vigenère Cipher</option>
+      <option value="transposition">Transposition Cipher</option>
+    </select>
+
+    <label for="levelSelect">Choose Level:</label>
+    <select id="levelSelect">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+  </div>
+
+  <div class="question-area">
+    <p id="questionText">Loading question...</p>
+    <input type="text" id="answerInput" placeholder="Type your answer here" autocomplete="off" />
+  </div>
+
+  <div class="buttons">
+    <button id="submitBtn">Submit</button>
+    <button id="hintBtn">Hint</button>
+<button id="quitBtn">Quit</button>
+  </div>
+
+  <div class="feedback" id="feedback"></div>
+
+  <div class="score-progress">
+    <div id="score">Score: 0</div>
+    <div class="progress-bar-background">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/sounds.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
